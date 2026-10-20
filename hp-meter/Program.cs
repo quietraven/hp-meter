@@ -16,15 +16,17 @@ while (!int.TryParse(Console.ReadLine(), out hp) || hp < 0 || hp > 20)
 while (hp > 0)
 {
     int i = 0;
+    Console.Write("[");
     while (i < hp)
     {
         Console.Write("*");
         i++;
     }
+    Console.Write("]");
     Console.WriteLine();
     hp--;
 }
-
+Console.WriteLine("press enter to exit");
 Console.WriteLine("");
 
 
